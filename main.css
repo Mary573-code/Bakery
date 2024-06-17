@@ -1,0 +1,291 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Navbar
+{   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.Navbar ul
+{
+    list-style-type: none;
+    display: flex;
+}
+.Navbar li
+{  margin-top: 10px;
+   padding: 0px 10px;
+}
+.Navbar a
+{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Alegreya";
+    font-weight: normal;
+    color: #fff;
+}
+.Navbar img
+{   margin-top: 10px;
+    height: 48px;
+    
+}
+
+.Home
+{   background-image: url(images/drew-coffman-1872.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Home-btn
+{
+    flex-direction: row;
+}
+.Home .p2
+{
+    font-size: 24px;
+    color: rgba(255, 255, 255, .92);
+    margin-top: 10px;
+    line-height: 1.86em;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Alegreya Sans";
+}
+.Home .welc
+{
+    color: rgba(255, 255, 255, .92);
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 1.86em;
+    text-align: center;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+}
+.Home h1
+{
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 18px;
+    line-height: 1.2em;
+    font-family: "Alegreya";
+    font-weight: 400;
+    margin: .67em 0;
+    text-align: center;
+}
+.Home h1::after
+{
+    content: "|";
+    animation-name:typing ;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes typing 
+{
+  0%{content: "|";}   
+  10%{content: "a |";}   
+  20%{content: "am |";}   
+  30%{content: "ami |";}   
+  40%{content: "amil |";}   
+  50%{content: "amily |";}   
+  60%{content: "amily B |";}   
+  70%{content: "amily Ba |";}   
+  80%{content: "amily Bak |";}   
+  90%{content: "amily Baker |";} 
+  100%{content: "amily Bakery |";}    
+}
+.Home-btn a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: "Alegreya Sans";
+    text-align: center;
+}
+.Home-btn
+{
+    border: 2px solid transparent;
+    padding: 15px 28px;
+    border-radius: 4px;
+    line-height: 1.3rem;
+    margin-bottom: 12px;
+    text-align: center;
+    
+}
+.Home-btn1
+{
+    
+    background-color: rgb(141, 118, 83);
+    font-weight: 700;
+}
+.Home-btn2
+{
+    
+    background-color: transparent;
+    font-weight: 700;
+    border-color: #fff;
+}
+.Home-btn:hover
+{
+    background-color: #fff;
+}
+.Home-btn a:hover
+{
+    color: black;
+}
+.Navbar a:hover
+{
+    color:#8e7754 ;
+}
+.About
+{
+    display: flex;
+    padding-top: 100px;
+    align-content: space-around;
+    align-items: center;
+}
+.About .About-img 
+{
+    width: 40%;
+    margin: 50px;
+    padding-left: 100px;
+    border-top-right-radius:50% ;
+    border-bottom-left-radius:50% ;
+}
+
+.About-content h2
+{
+    font-family: "Alegreya";
+    font-size: 1.5rem;
+    color: #303030;
+    line-height: 1.38em;
+    padding-bottom: 30px;
+    font-weight: 400;
+   
+}
+.About-content .p1
+{
+    padding-bottom: 30px;
+    padding-right: 150px;
+}
+.About-content p
+{
+    line-height: 1.86em;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    font-weight: 400;
+    color: #686868;
+}
+.Location
+{   padding-top: 100px;
+    background-color: #f8f8f8;;
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+}
+.Location .Location-content h2
+{
+    font-family: "Alegreya";
+    font-size: 1.5rem;
+    color: #303030;
+    line-height: 1.38em;
+    padding-bottom: 30px;
+    font-weight: 400;
+}
+.Location .Location-content p
+{
+    padding-bottom: 30px;
+    padding-right: 150px;
+    line-height: 1.86em;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    font-weight: 400;
+    color: #686868;
+}
+.Location .Location-content
+{
+    margin: 50px;
+    padding-left: 100px;
+
+}
+.Location .location-img 
+{
+    width: 40%;
+    /* margin: 50px; */
+    padding-right: 100px;
+    border-top-left-radius:50% ;
+    border-bottom-right-radius:50% ;
+}
+.Gallery
+{
+    padding-top: 100px;
+    text-align: center;
+}
+.Gallery h3
+{
+    font-family: "Alegreya";
+    font-size: 30px;
+    color: #303030;
+    line-height: 1.38em;
+    font-weight: 400;
+    text-align: center;
+}
+.Gallery p
+{
+    font-size: 17px;
+    color: #888;
+    margin: 17px;
+    line-height: 1.86em;
+    text-align: center;
+    font-family: "Alegreya Sans";
+}
+.Gallery-contents
+{   width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.Gallery-contentsx 
+{
+    width: 33.333%;
+    margin: 15px;
+}
+.Gallery-contentsx img
+{
+ width: 100%;
+ padding-bottom: 30px;
+ border-radius: 50%;
+}
+.Gallery-contentsx h4
+{
+    font-family: "Alegreya";
+    text-align: center;
+    font-size: 22px;
+    color: #303030;
+    line-height: 1.38em;
+    font-weight: 400;
+}
+.Gallery-contentsx:hover
+{
+    transform: scale(1.2);
+    background-color: rgba(141, 118, 83, 0.4);
+}
+.Gallery-contentsx:hover p
+{
+    color: black;
+}
